@@ -1,5 +1,5 @@
-##Return the result of the inverse of a matrix.
-##If the result is not found, calculate the inverse and then save it to cache.
+##Calculate the inverse of a matrix and save it for future use.
+
 ##makeCacheMatrix will create a matrix and save its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -13,7 +13,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## cacheSolve will return a matrix that is the inverse of 'x'
+## cacheSolve will return a matrix that is the inverse of 'x'. 
+##If it's been calculatd before, it will return the result in cache.
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
